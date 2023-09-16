@@ -18,7 +18,7 @@ public class Contract {
     @Id
     private String id;
     private String customerId;
-    private String appartmentId;
+    private String apartmentId;
     private Date startDate;
     private Date endDate;
 
