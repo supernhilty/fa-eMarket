@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/demo.css}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Fa emarket</title>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navbar brand -->
+                <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                    <img
+                            src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+                            height="15"
+                            alt="MDB Logo"
+                            loading="lazy"
+                    />
+                </a>
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+
+            <!-- Right elements -->
+            <div class="d-flex align-items-center">
+                <!-- Icon -->
+                <a class="text-reset me-3" href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+
+                <!-- Notifications -->
+                <div class="dropdown">
+                    <a
+                            class="text-reset me-3 dropdown-toggle hidden-arrow"
+                            href="#"
+                            id="navbarDropdownMenuLink"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                    >
+                        <i class="fas fa-bell"></i>
+                        <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                    </a>
+                    <ul
+                            class="dropdown-menu dropdown-menu-end"
+                            aria-labelledby="navbarDropdownMenuLink"
+                    >
+                        <li>
+                            <a class="dropdown-item" href="#">Some news</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Another news</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Avatar -->
+                <div class="dropdown">
+                    <a
+                            class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                            href="#"
+                            id="navbarDropdownMenuAvatar"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                    >
+                        <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/FPT_logo_2010.svg/800px-FPT_logo_2010.svg.png"
+                                class="rounded-circle"
+                                height="25"
+                                alt="Black and White Portrait of a Man"
+                                loading="lazy"
+                        />
+                    </a>
+                    <ul
+                            class="dropdown-menu dropdown-menu-end"
+                            aria-labelledby="navbarDropdownMenuAvatar"
+                    >
+                        <li>
+                            <a class="dropdown-item" href="#">My profile</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Settings</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Form import -->
+    <div class="container mt-5">
+        <h2>Upload Files</h2>
+        <div class="file-upload-container">
+
+            <form id="formContract" action="/contract/upload" method="post" enctype="multipart/form-data">
+                <div class="file-upload-form import-contract">
+                    <h3>Import Contract</h3>
+                    <label for="file1">Choose a file</label>
+                    <input type="file" class="form-control-file" id="file1" name="file1" multiple>
+                    <button type="submit" class="btn btn-primary upload-button">Upload</button>
+                </div>
+            </form>
+
+
+
+
+            <form id="formCustomer" action="/customer/upload" method="post" enctype="multipart/form-data">
+                <div class="file-upload-form import-customer">
+                    <h3>Import Customer</h3>
+                    <label for="file2">Choose a file</label>
+                    <input type="file" class="form-control-file" id="file2" name="file2" multiple>
+                    <button type="submit" class="btn btn-primary upload-button">Upload</button>
+                </div>
+            </form>
+
+
+            <form id="formApartment" action="/apartment/upload" method="POST" enctype="multipart/form-data">
+                <div class="file-upload-form import-apartment">
+                    <h3>Import Apartment</h3>
+                    <label for="file3">Choose a file</label>
+                    <input type="file" class="form-control-file" id="file3" name="file3" accept=".csv" multiple>
+                    <button type="submit" id="apartmentSubmitButton" class="btn btn-primary upload-button">Upload</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <table id="fileTableApartment" class="table">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Address</th>
+            <th scope="col">Retail Price</th>
+            <th scope="col">Number of room</th>
+        </tr>
+        </thead>
+        <tbody id="fileTableBodyApartment">
+
+        </tbody>
+    </table>
+
+    <script th:src="@{/js/demo.js}">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
