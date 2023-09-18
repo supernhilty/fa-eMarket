@@ -1,9 +1,14 @@
 package com.example.faemarket.model.mapper;
 
 import com.example.faemarket.entity.Customer;
+import com.example.faemarket.helper.CSVHelper;
+import com.example.faemarket.model.dto.ContractDto;
 import com.example.faemarket.model.dto.CustomerDto;
+import org.apache.commons.csv.CSVRecord;
 
-public class CustomerMapper {
+import java.sql.Date;
+
+public class CustomerMapper extends CSVHelper {
     public static CustomerDto toCustomerDto(Customer customer){
         return CustomerDto.builder()
                 .id(customer.getId())
@@ -24,5 +29,15 @@ public class CustomerMapper {
                 .age(customerDto.getAge())
                 .status(customerDto.getStatus())
                 .build();
+    }
+    @Override
+    public CustomerDto parseToObject(CSVRecord csvRecord){
+        CustomerDto customerDto = new CustomerDto(csvRecord.get("Id"),
+                csvRecord.get("First Name"),
+                csvRecord.get("Last Name"),
+                csvRecord.get("Address"),
+                Integer.parseInt(csvRecord.get("Age")),
+               csvRecord.get("Status"));
+        return customerDto;
     }
 }
