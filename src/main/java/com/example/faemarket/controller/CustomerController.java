@@ -49,7 +49,7 @@ public class CustomerController {
     }
 
     @GetMapping("/")
-    public ResponseEntity<List<CustomerDto>> getAllContracts() {
+    public ResponseEntity<List<CustomerDto>> getAllCustomers() {
         try {
             List<CustomerDto> customerDtos = customerService.findAllCustomers();
 
