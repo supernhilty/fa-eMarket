@@ -1,6 +1,40 @@
 const uploadForm = document.getElementById('formApartment');
 const submitButton = document.getElementById('apartmentSubmitButton');
-const fileTableBody = document.getElementById('fileTableBody');
+const fileTableBody = document.getElementById('fileTableBodyApartment');
+
+function refreshTable() {
+    // Lấy đối tượng tbody của bảng
+    const tbody = document.getElementById('fileTableBodyApartment');
+
+    // Gửi yêu cầu GET đến máy chủ để lấy dữ liệu mới
+    fetch('http://localhost:8080/apartment/apartments')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Xóa nội dung cũ của tbody
+            tbody.innerHTML = '';
+
+            // Thêm dữ liệu mới vào tbody
+            data.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.id}</td>
+                    <td>${item.address}</td>
+                    <td>${item.retailPrice}</td>
+                    <td>${item.numberOfRoom}</td>
+                `;
+
+                tbody.appendChild(row);
+            });
+        })
+        .catch(error => {
+            console.error('Lỗi khi tải lại bảng:', error);
+        });
+}
 
 document.getElementById('formApartment').addEventListener('submit', function (e) {
     e.preventDefault(); // Ngăn chuyển hướng mặc định của biểu mẫu
@@ -42,4 +76,5 @@ document.getElementById('formApartment').addEventListener('submit', function (e)
         console.log('Không có tệp nào được chọn.');
         alert("Không có tệp nào được chọn")
     }
+    refreshTable();
 });
