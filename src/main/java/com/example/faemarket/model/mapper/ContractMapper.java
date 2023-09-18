@@ -7,8 +7,7 @@ public class ContractMapper {
     public static ContractDto toContractDto(Contract contract){
         return ContractDto.builder()
                 .id(contract.getId())
-                .customerId(contract.getCustomerId())
-                .apartmentId(contract.getApartmentId())
+
                 .startDate(contract.getStartDate())
                 .endDate(contract.getEndDate()).build();
     }
@@ -16,8 +15,8 @@ public class ContractMapper {
     public static Contract toContract(ContractDto contractDto){
         return Contract.builder()
                 .id(contractDto.getId())
-                .customerId(contractDto.getCustomerId())
-                .apartmentId(contractDto.getApartmentId())
+
+
                 .startDate(contractDto.getStartDate())
                 .endDate(contractDto.getEndDate()).build();
     }

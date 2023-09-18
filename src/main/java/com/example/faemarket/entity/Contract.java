@@ -13,12 +13,11 @@ import java.util.Date;
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name="contracts")
+@Table(name="contract")
 public class Contract {
     @Id
     private String id;
-    private String customerId;
-    private String apartmentId;
+
     private Date startDate;
     private Date endDate;
 

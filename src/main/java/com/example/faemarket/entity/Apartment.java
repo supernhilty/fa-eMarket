@@ -11,7 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name="apartments")
+@Table(name="apartment")
 public class Apartment {
     @Id
     private String id;
