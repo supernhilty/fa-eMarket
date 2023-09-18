@@ -5,9 +5,10 @@ import com.example.faemarket.helper.CSVHelper;
 import com.example.faemarket.model.dto.ContractDto;
 import com.example.faemarket.model.dto.CustomerDto;
 import org.apache.commons.csv.CSVRecord;
+import org.springframework.stereotype.Component;
 
 import java.sql.Date;
-
+@Component
 public class CustomerMapper extends CSVHelper {
     public static CustomerDto toCustomerDto(Customer customer){
         return CustomerDto.builder()

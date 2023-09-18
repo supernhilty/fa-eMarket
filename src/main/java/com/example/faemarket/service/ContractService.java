@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface ContractService {
 
-    Contract saveContract(ContractDto contractDto);
+    int saveContract(ContractDto contractDto);
     List<ContractDto> findAllContracts();
-    List<Contract> saveAllContracts(List<ContractDto> contractDtos);
+    int saveAllContracts(List<ContractDto> contractDtos);
 }

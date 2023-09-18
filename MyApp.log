@@ -599,3 +599,464 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2023-Sep-18 10:47:32 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-Sep-18 10:47:32 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown initiated...
 2023-Sep-18 10:47:32 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown completed.
+2023-Sep-18 13:57:45 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Starting FaEMarketApplication using Java 19.0.1 with PID 16000 (D:\STUDY\SpringFramework\fa-eMarket\target\classes started by leyen in D:\STUDY\SpringFramework\fa-eMarket)
+2023-Sep-18 13:57:45 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - No active profile set, falling back to 1 default profile: "default"
+2023-Sep-18 13:57:45 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-Sep-18 13:57:45 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-Sep-18 13:57:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-Sep-18 13:57:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 63 ms. Found 3 JPA repository interfaces.
+2023-Sep-18 13:57:46 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 8080 (http)
+2023-Sep-18 13:57:46 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 13:57:46 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat]
+2023-Sep-18 13:57:46 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-Sep-18 13:57:47 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext
+2023-Sep-18 13:57:47 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1310 ms
+2023-Sep-18 13:57:47 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting...
+2023-Sep-18 13:57:47 [restartedMain] INFO  c.z.h.p.HikariPool                                 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7bbf9a94
+2023-Sep-18 13:57:47 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed.
+2023-Sep-18 13:57:47 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration               - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/faemarket'
+2023-Sep-18 13:57:47 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-Sep-18 13:57:47 [restartedMain] INFO  o.h.Version                                        - HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-Sep-18 13:57:47 [restartedMain] INFO  o.h.c.Environment                                  - HHH000406: Using bytecode reflection optimizer
+2023-Sep-18 13:57:47 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 13:57:48 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-Sep-18 13:57:48 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 13:57:49 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-Sep-18 13:57:49 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 13:57:49 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-Sep-18 13:57:50 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-Sep-18 13:57:50 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2023-Sep-18 13:57:50 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 13:57:50 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 8080 (http) with context path ''
+2023-Sep-18 13:57:50 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Started FaEMarketApplication in 5.053 seconds (process running for 6.225)
+2023-Sep-18 14:09:52 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 14:09:52 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown initiated...
+2023-Sep-18 14:09:52 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown completed.
+2023-Sep-18 14:09:57 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Starting FaEMarketApplication using Java 19.0.1 with PID 16684 (D:\STUDY\SpringFramework\fa-eMarket\target\classes started by leyen in D:\STUDY\SpringFramework\fa-eMarket)
+2023-Sep-18 14:09:57 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - No active profile set, falling back to 1 default profile: "default"
+2023-Sep-18 14:09:57 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-Sep-18 14:09:57 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-Sep-18 14:09:58 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-Sep-18 14:09:58 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 62 ms. Found 3 JPA repository interfaces.
+2023-Sep-18 14:09:59 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 8080 (http)
+2023-Sep-18 14:09:59 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1385 ms
+2023-Sep-18 14:09:59 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting...
+2023-Sep-18 14:09:59 [restartedMain] INFO  c.z.h.p.HikariPool                                 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5953d690
+2023-Sep-18 14:09:59 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed.
+2023-Sep-18 14:09:59 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration               - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/faemarket'
+2023-Sep-18 14:09:59 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-Sep-18 14:09:59 [restartedMain] INFO  o.h.Version                                        - HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-Sep-18 14:09:59 [restartedMain] INFO  o.h.c.Environment                                  - HHH000406: Using bytecode reflection optimizer
+2023-Sep-18 14:10:00 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 14:10:00 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-Sep-18 14:10:00 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 14:10:01 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-Sep-18 14:10:01 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 14:10:02 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-Sep-18 14:10:02 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-Sep-18 14:10:02 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2023-Sep-18 14:10:02 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 8080 (http) with context path ''
+2023-Sep-18 14:10:02 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Started FaEMarketApplication in 5.091 seconds (process running for 6.222)
+2023-Sep-18 14:10:02 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 14:10:02 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown initiated...
+2023-Sep-18 14:10:02 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown completed.
+2023-Sep-18 14:47:22 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Starting FaEMarketApplication using Java 19.0.1 with PID 21104 (D:\STUDY\SpringFramework\fa-eMarket\target\classes started by leyen in D:\STUDY\SpringFramework\fa-eMarket)
+2023-Sep-18 14:47:22 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - No active profile set, falling back to 1 default profile: "default"
+2023-Sep-18 14:47:23 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-Sep-18 14:47:23 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-Sep-18 14:47:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-Sep-18 14:47:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 86 ms. Found 3 JPA repository interfaces.
+2023-Sep-18 14:47:24 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 8080 (http)
+2023-Sep-18 14:47:24 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 14:47:24 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat]
+2023-Sep-18 14:47:24 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-Sep-18 14:47:24 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext
+2023-Sep-18 14:47:24 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1879 ms
+2023-Sep-18 14:47:24 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting...
+2023-Sep-18 14:47:25 [restartedMain] INFO  c.z.h.p.HikariPool                                 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@587b5a01
+2023-Sep-18 14:47:25 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed.
+2023-Sep-18 14:47:25 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration               - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/faemarket'
+2023-Sep-18 14:47:25 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-Sep-18 14:47:25 [restartedMain] INFO  o.h.Version                                        - HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-Sep-18 14:47:25 [restartedMain] INFO  o.h.c.Environment                                  - HHH000406: Using bytecode reflection optimizer
+2023-Sep-18 14:47:26 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 14:47:26 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-Sep-18 14:47:26 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 14:47:27 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-Sep-18 14:47:28 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 14:47:28 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-Sep-18 14:47:28 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-Sep-18 14:47:29 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2023-Sep-18 14:47:29 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 14:47:29 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 8080 (http) with context path ''
+2023-Sep-18 14:47:29 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Started FaEMarketApplication in 7.104 seconds (process running for 9.22)
+2023-Sep-18 14:47:49 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-Sep-18 14:47:49 [Thread-5] INFO  o.a.c.h.Http11NioProtocol                          - Pausing ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 14:47:49 [Thread-5] INFO  o.a.c.c.StandardService                            - Stopping service [Tomcat]
+2023-Sep-18 14:47:49 [Thread-5] INFO  o.a.c.h.Http11NioProtocol                          - Stopping ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 14:47:49 [Thread-5] INFO  o.a.c.h.Http11NioProtocol                          - Destroying ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 14:47:49 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 14:47:49 [Thread-5] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown initiated...
+2023-Sep-18 14:47:49 [Thread-5] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown completed.
+2023-Sep-18 14:47:49 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Starting FaEMarketApplication using Java 19.0.1 with PID 21104 (D:\STUDY\SpringFramework\fa-eMarket\target\classes started by leyen in D:\STUDY\SpringFramework\fa-eMarket)
+2023-Sep-18 14:47:49 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - No active profile set, falling back to 1 default profile: "default"
+2023-Sep-18 14:47:50 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-Sep-18 14:47:50 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2023-Sep-18 14:47:50 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 8080 (http)
+2023-Sep-18 14:47:50 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 14:47:50 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat]
+2023-Sep-18 14:47:50 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-Sep-18 14:47:50 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext
+2023-Sep-18 14:47:50 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 364 ms
+2023-Sep-18 14:47:50 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-2 - Starting...
+2023-Sep-18 14:47:50 [restartedMain] INFO  c.z.h.p.HikariPool                                 - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@66e8984
+2023-Sep-18 14:47:50 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-2 - Start completed.
+2023-Sep-18 14:47:50 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration               - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/faemarket'
+2023-Sep-18 14:47:50 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-Sep-18 14:47:50 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 14:47:50 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-Sep-18 14:47:50 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 14:47:50 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-Sep-18 14:47:50 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 14:47:50 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-Sep-18 14:47:51 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-Sep-18 14:47:51 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2023-Sep-18 14:47:51 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 14:47:51 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 8080 (http) with context path ''
+2023-Sep-18 14:47:51 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Started FaEMarketApplication in 1.385 seconds (process running for 31.447)
+2023-Sep-18 14:47:51 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener  - Condition evaluation unchanged
+2023-Sep-18 14:50:37 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-Sep-18 14:50:37 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet'
+2023-Sep-18 14:50:37 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 35 ms
+2023-Sep-18 14:50:38 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'file' is not present.]
+2023-Sep-18 14:51:29 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 14:51:29 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-2 - Shutdown initiated...
+2023-Sep-18 14:51:29 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-2 - Shutdown completed.
+2023-Sep-18 14:53:31 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Starting FaEMarketApplication using Java 19.0.1 with PID 11528 (D:\STUDY\SpringFramework\fa-eMarket\target\classes started by leyen in D:\STUDY\SpringFramework\fa-eMarket)
+2023-Sep-18 14:53:31 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - No active profile set, falling back to 1 default profile: "default"
+2023-Sep-18 14:53:32 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-Sep-18 14:53:32 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-Sep-18 14:53:33 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-Sep-18 14:53:33 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 99 ms. Found 3 JPA repository interfaces.
+2023-Sep-18 14:53:34 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 8080 (http)
+2023-Sep-18 14:53:34 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 14:53:34 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat]
+2023-Sep-18 14:53:34 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-Sep-18 14:53:34 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext
+2023-Sep-18 14:53:34 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 2176 ms
+2023-Sep-18 14:53:34 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting...
+2023-Sep-18 14:53:34 [restartedMain] INFO  c.z.h.p.HikariPool                                 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e709864
+2023-Sep-18 14:53:34 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed.
+2023-Sep-18 14:53:34 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration               - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/faemarket'
+2023-Sep-18 14:53:35 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-Sep-18 14:53:35 [restartedMain] INFO  o.h.Version                                        - HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-Sep-18 14:53:35 [restartedMain] INFO  o.h.c.Environment                                  - HHH000406: Using bytecode reflection optimizer
+2023-Sep-18 14:53:35 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 14:53:35 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-Sep-18 14:53:36 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 14:53:37 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-Sep-18 14:53:37 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 14:53:38 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-Sep-18 14:53:39 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-Sep-18 14:53:39 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2023-Sep-18 14:53:39 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 14:53:39 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 8080 (http) with context path ''
+2023-Sep-18 14:53:39 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Started FaEMarketApplication in 8.36 seconds (process running for 13.652)
+2023-Sep-18 14:53:42 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 14:53:42 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown initiated...
+2023-Sep-18 14:53:42 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown completed.
+2023-Sep-18 14:53:59 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Starting FaEMarketApplication using Java 19.0.1 with PID 12764 (D:\STUDY\SpringFramework\fa-eMarket\target\classes started by leyen in D:\STUDY\SpringFramework\fa-eMarket)
+2023-Sep-18 14:53:59 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - No active profile set, falling back to 1 default profile: "default"
+2023-Sep-18 14:53:59 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-Sep-18 14:53:59 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-Sep-18 14:54:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-Sep-18 14:54:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 99 ms. Found 3 JPA repository interfaces.
+2023-Sep-18 14:54:01 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 8080 (http)
+2023-Sep-18 14:54:01 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 14:54:01 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat]
+2023-Sep-18 14:54:01 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-Sep-18 14:54:01 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext
+2023-Sep-18 14:54:01 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1945 ms
+2023-Sep-18 14:54:01 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting...
+2023-Sep-18 14:54:02 [restartedMain] INFO  c.z.h.p.HikariPool                                 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f02dc14
+2023-Sep-18 14:54:02 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed.
+2023-Sep-18 14:54:02 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration               - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/faemarket'
+2023-Sep-18 14:54:02 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-Sep-18 14:54:02 [restartedMain] INFO  o.h.Version                                        - HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-Sep-18 14:54:02 [restartedMain] INFO  o.h.c.Environment                                  - HHH000406: Using bytecode reflection optimizer
+2023-Sep-18 14:54:02 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 14:54:02 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-Sep-18 14:54:03 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 14:54:04 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-Sep-18 14:54:04 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 14:54:05 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-Sep-18 14:54:06 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-Sep-18 14:54:06 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2023-Sep-18 14:54:06 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 14:54:06 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 8080 (http) with context path ''
+2023-Sep-18 14:54:06 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Started FaEMarketApplication in 7.737 seconds (process running for 9.505)
+2023-Sep-18 14:55:24 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-Sep-18 14:55:24 [http-nio-8080-exec-2] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet'
+2023-Sep-18 14:55:24 [http-nio-8080-exec-2] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 13 ms
+2023-Sep-18 14:55:24 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'file' is not present.]
+2023-Sep-18 14:55:40 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'file' is not present.]
+2023-Sep-18 14:55:49 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 14:55:50 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown initiated...
+2023-Sep-18 14:55:50 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown completed.
+2023-Sep-18 14:56:25 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Starting FaEMarketApplication using Java 19.0.1 with PID 16832 (D:\STUDY\SpringFramework\fa-eMarket\target\classes started by leyen in D:\STUDY\SpringFramework\fa-eMarket)
+2023-Sep-18 14:56:25 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - No active profile set, falling back to 1 default profile: "default"
+2023-Sep-18 14:56:25 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-Sep-18 14:56:25 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-Sep-18 14:56:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-Sep-18 14:56:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
+2023-Sep-18 14:56:26 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 8080 (http)
+2023-Sep-18 14:56:26 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 14:56:26 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat]
+2023-Sep-18 14:56:26 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-Sep-18 14:56:26 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext
+2023-Sep-18 14:56:26 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1275 ms
+2023-Sep-18 14:56:26 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting...
+2023-Sep-18 14:56:26 [restartedMain] INFO  c.z.h.p.HikariPool                                 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f794d5e
+2023-Sep-18 14:56:26 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed.
+2023-Sep-18 14:56:26 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration               - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/faemarket'
+2023-Sep-18 14:56:27 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-Sep-18 14:56:27 [restartedMain] INFO  o.h.Version                                        - HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-Sep-18 14:56:27 [restartedMain] INFO  o.h.c.Environment                                  - HHH000406: Using bytecode reflection optimizer
+2023-Sep-18 14:56:27 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 14:56:27 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-Sep-18 14:56:27 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 14:56:28 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-Sep-18 14:56:28 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 14:56:29 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-Sep-18 14:56:29 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-Sep-18 14:56:29 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2023-Sep-18 14:56:29 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 14:56:29 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 8080 (http) with context path ''
+2023-Sep-18 14:56:29 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Started FaEMarketApplication in 4.925 seconds (process running for 6.18)
+2023-Sep-18 14:56:32 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-Sep-18 14:56:32 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet'
+2023-Sep-18 14:56:32 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 2 ms
+2023-Sep-18 14:56:32 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'file' is not present.]
+2023-Sep-18 14:56:45 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 14:56:45 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown initiated...
+2023-Sep-18 14:56:45 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown completed.
+2023-Sep-18 14:57:59 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Starting FaEMarketApplication using Java 19.0.1 with PID 20144 (D:\STUDY\SpringFramework\fa-eMarket\target\classes started by leyen in D:\STUDY\SpringFramework\fa-eMarket)
+2023-Sep-18 14:57:59 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - No active profile set, falling back to 1 default profile: "default"
+2023-Sep-18 14:57:59 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-Sep-18 14:57:59 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-Sep-18 14:57:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-Sep-18 14:57:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 60 ms. Found 3 JPA repository interfaces.
+2023-Sep-18 14:58:00 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 8080 (http)
+2023-Sep-18 14:58:00 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 14:58:00 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat]
+2023-Sep-18 14:58:00 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-Sep-18 14:58:00 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext
+2023-Sep-18 14:58:00 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1293 ms
+2023-Sep-18 14:58:00 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting...
+2023-Sep-18 14:58:00 [restartedMain] INFO  c.z.h.p.HikariPool                                 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@98e5cd1
+2023-Sep-18 14:58:00 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed.
+2023-Sep-18 14:58:00 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration               - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/faemarket'
+2023-Sep-18 14:58:01 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-Sep-18 14:58:01 [restartedMain] INFO  o.h.Version                                        - HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-Sep-18 14:58:01 [restartedMain] INFO  o.h.c.Environment                                  - HHH000406: Using bytecode reflection optimizer
+2023-Sep-18 14:58:01 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 14:58:01 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-Sep-18 14:58:01 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 14:58:02 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-Sep-18 14:58:02 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 14:58:03 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-Sep-18 14:58:03 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-Sep-18 14:58:03 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2023-Sep-18 14:58:03 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 14:58:03 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 8080 (http) with context path ''
+2023-Sep-18 14:58:03 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Started FaEMarketApplication in 4.716 seconds (process running for 5.763)
+2023-Sep-18 14:58:07 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-Sep-18 14:58:07 [http-nio-8080-exec-2] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet'
+2023-Sep-18 14:58:07 [http-nio-8080-exec-2] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 1 ms
+2023-Sep-18 14:58:07 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'file' is not present.]
+2023-Sep-18 15:00:21 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 15:00:21 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown initiated...
+2023-Sep-18 15:00:21 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown completed.
+2023-Sep-18 15:00:25 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Starting FaEMarketApplication using Java 19.0.1 with PID 13944 (D:\STUDY\SpringFramework\fa-eMarket\target\classes started by leyen in D:\STUDY\SpringFramework\fa-eMarket)
+2023-Sep-18 15:00:25 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - No active profile set, falling back to 1 default profile: "default"
+2023-Sep-18 15:00:25 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-Sep-18 15:00:25 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-Sep-18 15:00:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-Sep-18 15:00:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2023-Sep-18 15:00:26 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 8080 (http)
+2023-Sep-18 15:00:26 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 15:00:26 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat]
+2023-Sep-18 15:00:26 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-Sep-18 15:00:26 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext
+2023-Sep-18 15:00:26 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1134 ms
+2023-Sep-18 15:00:26 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting...
+2023-Sep-18 15:00:26 [restartedMain] INFO  c.z.h.p.HikariPool                                 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@62f6d2d6
+2023-Sep-18 15:00:26 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed.
+2023-Sep-18 15:00:26 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration               - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/faemarket'
+2023-Sep-18 15:00:26 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-Sep-18 15:00:26 [restartedMain] INFO  o.h.Version                                        - HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-Sep-18 15:00:26 [restartedMain] INFO  o.h.c.Environment                                  - HHH000406: Using bytecode reflection optimizer
+2023-Sep-18 15:00:26 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 15:00:27 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-Sep-18 15:00:27 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 15:00:28 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-Sep-18 15:00:28 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 15:00:28 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-Sep-18 15:00:28 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-Sep-18 15:00:29 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2023-Sep-18 15:00:29 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 15:00:29 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 8080 (http) with context path ''
+2023-Sep-18 15:00:29 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Started FaEMarketApplication in 4.441 seconds (process running for 5.502)
+2023-Sep-18 15:00:44 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-Sep-18 15:00:44 [http-nio-8080-exec-2] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet'
+2023-Sep-18 15:00:44 [http-nio-8080-exec-2] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 1 ms
+2023-Sep-18 15:00:44 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'file' is not present.]
+2023-Sep-18 15:00:53 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 15:00:53 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown initiated...
+2023-Sep-18 15:00:53 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown completed.
+2023-Sep-18 15:00:55 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Starting FaEMarketApplication using Java 19.0.1 with PID 20184 (D:\STUDY\SpringFramework\fa-eMarket\target\classes started by leyen in D:\STUDY\SpringFramework\fa-eMarket)
+2023-Sep-18 15:00:55 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - No active profile set, falling back to 1 default profile: "default"
+2023-Sep-18 15:00:55 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-Sep-18 15:00:55 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-Sep-18 15:00:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-Sep-18 15:00:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 55 ms. Found 3 JPA repository interfaces.
+2023-Sep-18 15:00:57 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 8080 (http)
+2023-Sep-18 15:00:57 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 15:00:57 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat]
+2023-Sep-18 15:00:57 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-Sep-18 15:00:57 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext
+2023-Sep-18 15:00:57 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1122 ms
+2023-Sep-18 15:00:57 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting...
+2023-Sep-18 15:00:57 [restartedMain] INFO  c.z.h.p.HikariPool                                 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b5ce5cd
+2023-Sep-18 15:00:57 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed.
+2023-Sep-18 15:00:57 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration               - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/faemarket'
+2023-Sep-18 15:00:57 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-Sep-18 15:00:57 [restartedMain] INFO  o.h.Version                                        - HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-Sep-18 15:00:57 [restartedMain] INFO  o.h.c.Environment                                  - HHH000406: Using bytecode reflection optimizer
+2023-Sep-18 15:00:57 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 15:00:58 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-Sep-18 15:00:58 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 15:00:58 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-Sep-18 15:00:59 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 15:00:59 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-Sep-18 15:00:59 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-Sep-18 15:00:59 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2023-Sep-18 15:00:59 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 15:00:59 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 8080 (http) with context path ''
+2023-Sep-18 15:00:59 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Started FaEMarketApplication in 4.05 seconds (process running for 5.16)
+2023-Sep-18 15:01:17 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-Sep-18 15:01:17 [http-nio-8080-exec-3] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet'
+2023-Sep-18 15:01:17 [http-nio-8080-exec-3] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 1 ms
+2023-Sep-18 15:01:17 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'file' is not present.]
+2023-Sep-18 15:01:43 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 15:01:43 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown initiated...
+2023-Sep-18 15:01:43 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown completed.
+2023-Sep-18 15:02:42 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Starting FaEMarketApplication using Java 19.0.1 with PID 14548 (D:\STUDY\SpringFramework\fa-eMarket\target\classes started by leyen in D:\STUDY\SpringFramework\fa-eMarket)
+2023-Sep-18 15:02:42 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - No active profile set, falling back to 1 default profile: "default"
+2023-Sep-18 15:02:42 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-Sep-18 15:02:42 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-Sep-18 15:02:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-Sep-18 15:02:43 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 56 ms. Found 3 JPA repository interfaces.
+2023-Sep-18 15:02:43 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 8080 (http)
+2023-Sep-18 15:02:43 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 15:02:43 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat]
+2023-Sep-18 15:02:43 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-Sep-18 15:02:43 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext
+2023-Sep-18 15:02:43 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1290 ms
+2023-Sep-18 15:02:43 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting...
+2023-Sep-18 15:02:44 [restartedMain] INFO  c.z.h.p.HikariPool                                 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c8a9f2a
+2023-Sep-18 15:02:44 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed.
+2023-Sep-18 15:02:44 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration               - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/faemarket'
+2023-Sep-18 15:02:44 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-Sep-18 15:02:44 [restartedMain] INFO  o.h.Version                                        - HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-Sep-18 15:02:44 [restartedMain] INFO  o.h.c.Environment                                  - HHH000406: Using bytecode reflection optimizer
+2023-Sep-18 15:02:44 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 15:02:44 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-Sep-18 15:02:44 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 15:02:45 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-Sep-18 15:02:45 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 15:02:45 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-Sep-18 15:02:46 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-Sep-18 15:02:46 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2023-Sep-18 15:02:46 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 15:02:46 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 8080 (http) with context path ''
+2023-Sep-18 15:02:46 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Started FaEMarketApplication in 4.645 seconds (process running for 5.818)
+2023-Sep-18 15:02:50 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-Sep-18 15:02:50 [http-nio-8080-exec-2] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet'
+2023-Sep-18 15:02:50 [http-nio-8080-exec-2] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 1 ms
+2023-Sep-18 15:02:50 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'file' is not present.]
+2023-Sep-18 15:06:02 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 15:06:03 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown initiated...
+2023-Sep-18 15:06:03 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown completed.
+2023-Sep-18 15:08:24 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Starting FaEMarketApplication using Java 19.0.1 with PID 9340 (D:\STUDY\SpringFramework\fa-eMarket\target\classes started by leyen in D:\STUDY\SpringFramework\fa-eMarket)
+2023-Sep-18 15:08:24 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - No active profile set, falling back to 1 default profile: "default"
+2023-Sep-18 15:08:24 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-Sep-18 15:08:24 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-Sep-18 15:08:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-Sep-18 15:08:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 138 ms. Found 3 JPA repository interfaces.
+2023-Sep-18 15:08:25 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 8080 (http)
+2023-Sep-18 15:08:25 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 15:08:25 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat]
+2023-Sep-18 15:08:25 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-Sep-18 15:08:25 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext
+2023-Sep-18 15:08:25 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1703 ms
+2023-Sep-18 15:08:25 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting...
+2023-Sep-18 15:08:26 [restartedMain] INFO  c.z.h.p.HikariPool                                 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@737d4a55
+2023-Sep-18 15:08:26 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed.
+2023-Sep-18 15:08:26 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration               - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/faemarket'
+2023-Sep-18 15:08:26 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-Sep-18 15:08:26 [restartedMain] INFO  o.h.Version                                        - HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-Sep-18 15:08:26 [restartedMain] INFO  o.h.c.Environment                                  - HHH000406: Using bytecode reflection optimizer
+2023-Sep-18 15:08:26 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 15:08:26 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-Sep-18 15:08:27 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 15:08:27 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-Sep-18 15:08:28 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 15:08:28 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-Sep-18 15:08:28 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-Sep-18 15:08:28 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2023-Sep-18 15:08:28 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 15:08:28 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 8080 (http) with context path ''
+2023-Sep-18 15:08:28 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Started FaEMarketApplication in 5.002 seconds (process running for 6.128)
+2023-Sep-18 15:08:36 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-Sep-18 15:08:36 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet'
+2023-Sep-18 15:08:36 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 2 ms
+2023-Sep-18 15:09:28 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 15:09:28 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown initiated...
+2023-Sep-18 15:09:28 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown completed.
+2023-Sep-18 15:09:56 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Starting FaEMarketApplication using Java 19.0.1 with PID 21052 (D:\STUDY\SpringFramework\fa-eMarket\target\classes started by leyen in D:\STUDY\SpringFramework\fa-eMarket)
+2023-Sep-18 15:09:56 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - No active profile set, falling back to 1 default profile: "default"
+2023-Sep-18 15:09:57 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-Sep-18 15:09:57 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-Sep-18 15:09:58 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-Sep-18 15:09:58 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 88 ms. Found 3 JPA repository interfaces.
+2023-Sep-18 15:09:59 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 8080 (http)
+2023-Sep-18 15:09:59 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 15:09:59 [restartedMain] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat]
+2023-Sep-18 15:09:59 [restartedMain] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-Sep-18 15:09:59 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext
+2023-Sep-18 15:09:59 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 2487 ms
+2023-Sep-18 15:09:59 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting...
+2023-Sep-18 15:10:00 [restartedMain] INFO  c.z.h.p.HikariPool                                 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20b4dcdc
+2023-Sep-18 15:10:00 [restartedMain] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed.
+2023-Sep-18 15:10:00 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration               - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/faemarket'
+2023-Sep-18 15:10:00 [restartedMain] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-Sep-18 15:10:00 [restartedMain] INFO  o.h.Version                                        - HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-Sep-18 15:10:00 [restartedMain] INFO  o.h.c.Environment                                  - HHH000406: Using bytecode reflection optimizer
+2023-Sep-18 15:10:00 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 15:10:00 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-Sep-18 15:10:01 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator                  - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-18 15:10:01 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-Sep-18 15:10:02 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 15:10:02 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-Sep-18 15:10:02 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-Sep-18 15:10:03 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2023-Sep-18 15:10:03 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-8080"]
+2023-Sep-18 15:10:03 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 8080 (http) with context path ''
+2023-Sep-18 15:10:03 [restartedMain] INFO  c.e.f.FaEMarketApplication                         - Started FaEMarketApplication in 6.858 seconds (process running for 8.726)
+2023-Sep-18 15:10:09 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-Sep-18 15:10:09 [http-nio-8080-exec-2] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet'
+2023-Sep-18 15:10:09 [http-nio-8080-exec-2] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 0 ms
+2023-Sep-18 15:12:20 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-18 15:12:20 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown initiated...
+2023-Sep-18 15:12:20 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown completed.

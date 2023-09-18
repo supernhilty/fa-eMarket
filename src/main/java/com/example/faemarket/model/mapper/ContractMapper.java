@@ -4,9 +4,10 @@ import com.example.faemarket.entity.Contract;
 import com.example.faemarket.helper.CSVHelper;
 import com.example.faemarket.model.dto.ContractDto;
 import org.apache.commons.csv.CSVRecord;
+import org.springframework.stereotype.Component;
 
 import java.sql.Date;
-
+@Component
 public class ContractMapper extends CSVHelper {
     public static ContractDto toContractDto(Contract contract){
         return ContractDto.builder()

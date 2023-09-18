@@ -1,6 +1,7 @@
 package com.example.faemarket.service;
 
 import com.example.faemarket.entity.Contract;
+import com.example.faemarket.model.dto.ApartmentDto;
 import com.example.faemarket.model.dto.ContractDto;
 import com.example.faemarket.model.mapper.ContractMapper;
 import com.example.faemarket.repository.ContractRepository;
@@ -15,8 +16,9 @@ public class ContractServiceImpl implements ContractService{
     @Autowired
     private ContractRepository contractRepository;
     @Override
-    public Contract saveContract(ContractDto contractDto) {
-        return contractRepository.save(ContractMapper.toContract(contractDto));
+    public int saveContract(ContractDto contractDto) {
+        contractRepository.save(ContractMapper.toContract(contractDto));
+        return 0;
     }
 
     @Override
@@ -25,7 +27,15 @@ public class ContractServiceImpl implements ContractService{
     }
 
     @Override
-    public List<Contract> saveAllContracts(List<ContractDto> contractDtos) {
-        return contractRepository.saveAll(contractDtos.stream().map(ContractMapper::toContract).collect(Collectors.toList()));
+    public int saveAllContracts(List<ContractDto> contractDtos) {
+        int fail=0;
+        for (ContractDto o:contractDtos) {
+            if(contractRepository.existsById(o.getId())){
+                fail++;
+            }else{
+                saveContract(o);
+            }
+        }
+        return fail;
     }
 }

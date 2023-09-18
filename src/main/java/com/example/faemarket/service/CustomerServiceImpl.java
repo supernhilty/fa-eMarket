@@ -1,6 +1,7 @@
 package com.example.faemarket.service;
 
 import com.example.faemarket.entity.Customer;
+import com.example.faemarket.model.dto.ApartmentDto;
 import com.example.faemarket.model.dto.CustomerDto;
 import com.example.faemarket.model.mapper.CustomerMapper;
 import com.example.faemarket.repository.CustomerRepository;
@@ -12,13 +13,22 @@ import java.util.stream.Collectors;
 public class CustomerServiceImpl implements CustomerService{
     private CustomerRepository customerRepository;
     @Override
-    public Customer saveCustomer(CustomerDto customerDto) {
-         return customerRepository.save(CustomerMapper.toCustomer(customerDto));
+    public int saveCustomer(CustomerDto customerDto) {
+          customerRepository.save(CustomerMapper.toCustomer(customerDto));
+        return 0;
     }
 
     @Override
-    public List<Customer> saveAllCustomers(List<CustomerDto> customerDtos) {
-        return customerRepository.saveAll(customerDtos.stream().map(CustomerMapper::toCustomer).collect(Collectors.toList()));
+    public int saveAllCustomers(List<CustomerDto> customerDtos) {
+        int fail=0;
+        for (CustomerDto o:customerDtos) {
+            if(customerRepository.existsById(o.getId())){
+                fail++;
+            }else{
+                saveCustomer(o);
+            }
+        }
+        return fail;
     }
     @Override
     public List<CustomerDto> findAllCustomers() {

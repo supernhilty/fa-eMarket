@@ -8,7 +8,7 @@ import lombok.*;
 @AllArgsConstructor
 @Getter
 @Setter
-public class ApartmentDto {
+public class ApartmentDto{
     private String id;
     private String address;
     private String retailPrice;

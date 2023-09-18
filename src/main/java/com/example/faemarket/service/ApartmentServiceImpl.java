@@ -15,8 +15,11 @@ public class ApartmentServiceImpl implements ApartmentService{
     private ApartmentRepository apartmentRepository;
 
     @Override
-    public Apartment saveApartment(ApartmentDto apartmentDto) {
-        return apartmentRepository.save(ApartmentMapper.toApartment(apartmentDto));
+    public int saveApartment(ApartmentDto apartmentDto) {
+
+            apartmentRepository.save(ApartmentMapper.toApartment(apartmentDto));
+
+        return 0;
     }
 
     @Override
@@ -25,7 +28,15 @@ public class ApartmentServiceImpl implements ApartmentService{
     }
 
     @Override
-    public List<Apartment> saveAllApartments(List<ApartmentDto> apartmentDtos) {
-        return apartmentRepository.saveAll(apartmentDtos.stream().map(ApartmentMapper::toApartment).collect(Collectors.toList()));
+    public int saveAllApartments(List<ApartmentDto> apartmentDtos) {
+        int fail=0;
+        for (ApartmentDto o:apartmentDtos) {
+            if(apartmentRepository.existsById(o.getId())){
+                fail++;
+            }else{
+                saveApartment(o);
+            }
+        }
+        return fail;
     }
 }

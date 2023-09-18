@@ -8,7 +8,7 @@ import java.util.List;
 
 
 public interface CustomerService {
-    Customer saveCustomer(CustomerDto customerDto);
-    List<Customer> saveAllCustomers(List<CustomerDto> customerDtos);
+    int saveCustomer(CustomerDto customerDto);
+    int saveAllCustomers(List<CustomerDto> customerDtos);
     List<CustomerDto> findAllCustomers();
 }

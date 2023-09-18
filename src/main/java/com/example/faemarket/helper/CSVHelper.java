@@ -16,7 +16,7 @@ import java.util.List;
 
 public class CSVHelper {
     public static String TYPE = "text/csv";
-    public boolean hasCSVFormat(MultipartFile file) {
+    public static boolean hasCSVFormat(MultipartFile file) {
 
         if (!TYPE.equals(file.getContentType())) {
             return false;
@@ -24,7 +24,7 @@ public class CSVHelper {
         return true;
     }
 
-    public List<Object> csvToObject(InputStream is) {
+    public List<? extends Object> csvToObject(InputStream is) {
         try (BufferedReader fileReader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
              CSVParser csvParser = new CSVParser(fileReader,
                      CSVFormat.DEFAULT.withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim());) {

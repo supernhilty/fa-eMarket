@@ -4,7 +4,9 @@ import com.example.faemarket.entity.Apartment;
 import com.example.faemarket.helper.CSVHelper;
 import com.example.faemarket.model.dto.ApartmentDto;
 import org.apache.commons.csv.CSVRecord;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ApartmentMapper extends CSVHelper {
     public static ApartmentDto toApartmentDto(Apartment apartment){
         return ApartmentDto.builder()
