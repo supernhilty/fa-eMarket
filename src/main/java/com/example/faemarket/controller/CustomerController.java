@@ -48,7 +48,7 @@ public class CustomerController {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new String(message));
     }
 
-    @GetMapping("/")
+    @GetMapping("/customers")
     public ResponseEntity<List<CustomerDto>> getAllCustomers() {
         try {
             List<CustomerDto> customerDtos = customerService.findAllCustomers();
