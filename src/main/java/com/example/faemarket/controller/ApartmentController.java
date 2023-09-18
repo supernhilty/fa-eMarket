@@ -31,7 +31,8 @@ public class ApartmentController {
 
                 fail = apartmentService.saveAllApartments(list);
 
-                message = "Uploaded the file successfully: " + file.getOriginalFilename();
+                message = "Uploaded the file successfully: " + file.getOriginalFilename()+" "+fail;
+
                 return ResponseEntity.status(HttpStatus.OK).body(new String(message));
             } catch (Exception e) {
                 message = "Could not upload the file: " + file.getOriginalFilename() + "!";

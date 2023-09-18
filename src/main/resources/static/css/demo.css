@@ -1,0 +1,31 @@
+.file-upload-container {
+    display: flex;
+    flex-direction: row; /* Sắp xếp ngang hàng */
+    justify-content: center; /* Canh giữa theo trục ngang */
+    align-items: center; /* Canh giữa theo trục dọc */
+}
+
+/* Màu xanh cho form nhập file thứ nhất */
+.import-contract {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Màu đỏ cho form nhập file thứ hai */
+.import-customer {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Màu vàng cho form nhập file thứ ba */
+.import-apartment {
+    background-color: #f1c40f;
+    color: white;
+}
+
+.file-upload-form {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
