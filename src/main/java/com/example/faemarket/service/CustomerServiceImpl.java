@@ -8,14 +8,20 @@ import com.example.faemarket.repository.CustomerRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 @Service
 public class CustomerServiceImpl implements CustomerService{
     private CustomerRepository customerRepository;
     @Override
-    public int saveCustomer(CustomerDto customerDto) {
-          customerRepository.save(CustomerMapper.toCustomer(customerDto));
-        return 0;
+    public boolean saveCustomer(CustomerDto customerDto) {
+        try {
+            customerRepository.save(CustomerMapper.toCustomer(customerDto));
+            return true;
+        }catch (Exception e){
+            return false;
+        }
+
     }
 
     @Override
@@ -25,7 +31,11 @@ public class CustomerServiceImpl implements CustomerService{
             if(customerRepository.existsById(o.getId())){
                 fail++;
             }else{
-                saveCustomer(o);
+
+                if(!saveCustomer(o)){
+                    fail++;
+                }
+
             }
         }
         return fail;
@@ -33,6 +43,11 @@ public class CustomerServiceImpl implements CustomerService{
     @Override
     public List<CustomerDto> findAllCustomers() {
         return customerRepository.findAll().stream().map(CustomerMapper::toCustomerDto).collect(Collectors.toList());
+    }
+
+    @Override
+    public Optional<Customer> findCustomerById(String id) {
+        return customerRepository.findById(id);
     }
 
 }

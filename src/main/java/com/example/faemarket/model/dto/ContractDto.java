@@ -13,6 +13,6 @@ public class ContractDto {
     private String id;
     private String customerId;
     private String apartmentId;
-    private Date startDate;
-    private Date endDate;
+    private String startDate;
+    private String endDate;
 }

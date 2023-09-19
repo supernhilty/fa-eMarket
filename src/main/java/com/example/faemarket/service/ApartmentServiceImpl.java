@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 @Service
 public class ApartmentServiceImpl implements ApartmentService{
@@ -15,11 +16,13 @@ public class ApartmentServiceImpl implements ApartmentService{
     private ApartmentRepository apartmentRepository;
 
     @Override
-    public int saveApartment(ApartmentDto apartmentDto) {
-
+    public boolean saveApartment(ApartmentDto apartmentDto) {
+        try {
             apartmentRepository.save(ApartmentMapper.toApartment(apartmentDto));
-
-        return 0;
+            return true;
+        }catch (Exception e){
+            return false;
+        }
     }
 
     @Override
@@ -34,9 +37,20 @@ public class ApartmentServiceImpl implements ApartmentService{
             if(apartmentRepository.existsById(o.getId())){
                 fail++;
             }else{
-                saveApartment(o);
+                try{
+                    if(!saveApartment(o)){
+                        fail++;
+                    }
+                }catch(Exception e){
+                    fail++;
+                }
+
             }
         }
         return fail;
+    }
+
+    public Optional<Apartment> findApartmentById(String id){
+        return apartmentRepository.findById(id);
     }
 }

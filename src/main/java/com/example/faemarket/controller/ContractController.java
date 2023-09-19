@@ -10,15 +10,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping("/contract")
 public class ContractController {
     @Autowired
@@ -40,7 +37,7 @@ public class ContractController {
                 return ResponseEntity.status(HttpStatus.OK).body(new String(message));
             } catch (Exception e) {
                 message = "Could not upload the file: " + file.getOriginalFilename() + "!";
-                return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(new String(message));
+                return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(new String(e.getMessage()));
             }
         }
 
@@ -48,7 +45,7 @@ public class ContractController {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new String(message));
     }
 
-    @GetMapping("/")
+    @GetMapping("")
     public ResponseEntity<List<ContractDto>> getAllContracts() {
         try {
             List<ContractDto> contractDtos = contractService.findAllContracts();

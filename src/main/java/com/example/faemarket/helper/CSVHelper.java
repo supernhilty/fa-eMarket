@@ -34,11 +34,7 @@ public class CSVHelper {
             Iterable<CSVRecord> csvRecords = csvParser.getRecords();
 
             for (CSVRecord csvRecord : csvRecords) {
-//                Tutorial tutorial = new Contract(
-//                        Long.parseLong(csvRecord.get("Id")),
-//                        csvRecord.get("Title"),
-//                        csvRecord.get("Description"),
-//                        Boolean.parseBoolean(csvRecord.get("Published"))
+
 
                 lists.add(parseToObject(csvRecord));
 
@@ -53,5 +49,5 @@ public class CSVHelper {
 
     public Object parseToObject(CSVRecord csvRecord){
         return null;
-    };
+    }
 }
