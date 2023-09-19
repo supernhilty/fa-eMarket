@@ -1,9 +1,10 @@
-package com.example.faemarket.service;
+package com.example.faemarket.service.impl;
 
 import com.example.faemarket.entity.Apartment;
 import com.example.faemarket.model.dto.ApartmentDto;
 import com.example.faemarket.model.mapper.ApartmentMapper;
 import com.example.faemarket.repository.ApartmentRepository;
+import com.example.faemarket.service.ApartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 @Service
-public class ApartmentServiceImpl implements ApartmentService{
+public class ApartmentServiceImpl implements ApartmentService {
     @Autowired
     private ApartmentRepository apartmentRepository;
 

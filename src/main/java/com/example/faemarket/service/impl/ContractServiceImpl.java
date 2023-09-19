@@ -1,4 +1,4 @@
-package com.example.faemarket.service;
+package com.example.faemarket.service.impl;
 
 import com.example.faemarket.entity.Apartment;
 import com.example.faemarket.entity.Contract;
@@ -9,6 +9,7 @@ import com.example.faemarket.model.mapper.ContractMapper;
 import com.example.faemarket.repository.ApartmentRepository;
 import com.example.faemarket.repository.ContractRepository;
 import com.example.faemarket.repository.CustomerRepository;
+import com.example.faemarket.service.ContractService;
 import org.hibernate.mapping.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,7 +19,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 @Service
-public class ContractServiceImpl implements ContractService{
+public class ContractServiceImpl implements ContractService {
     @Autowired
     private ContractRepository contractRepository;
     @Autowired
