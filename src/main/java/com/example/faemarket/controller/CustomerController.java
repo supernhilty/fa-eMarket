@@ -27,17 +27,19 @@ public class CustomerController {
     public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file) {
         String message = "";
         int fail = 0;
+        int succeed = 0;
         if (CSVHelper.hasCSVFormat(file)) {
             try {
                 List<CustomerDto> list = (List<CustomerDto>) customerMapper.csvToObject(file.getInputStream());
 
                 fail = customerService.saveAllCustomers(list);
-
-                message = "Uploaded the file successfully: " + file.getOriginalFilename();
+                succeed = list.size()-fail;
+                message = "Uploaded the file successfully: " + file.getOriginalFilename()
+                        + "\nUpload successfully: "+succeed+" row(s) \nFail to upload: " + fail+ " row(s)";
                 return ResponseEntity.status(HttpStatus.OK).body(new String(message));
             } catch (Exception e) {
                 message = "Could not upload the file: " + file.getOriginalFilename() + "!";
-                return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(new String(e.getMessage()));
+                return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(new String(message));
             }
         }
 

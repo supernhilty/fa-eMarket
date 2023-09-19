@@ -25,13 +25,15 @@ public class ApartmentController {
     public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file) {
         String message = "";
         int fail = 0;
+        int succeed = 0;
         if (CSVHelper.hasCSVFormat(file)) {
             try {
                 List<ApartmentDto> list = (List<ApartmentDto>) apartmentMapper.csvToObject(file.getInputStream());
 
                 fail = apartmentService.saveAllApartments(list);
-
-                message = "Uploaded the file successfully: " + file.getOriginalFilename()+" "+fail;
+                succeed = list.size()-fail;
+                message = "Uploaded the file successfully: " + file.getOriginalFilename()
+                        + "\nUpload successfully: "+succeed+" row(s) \nFail to upload: " + fail+ " row(s)";
 
                 return ResponseEntity.status(HttpStatus.OK).body(new String(message));
             } catch (Exception e) {
@@ -44,7 +46,7 @@ public class ApartmentController {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new String(message));
     }
 
-    @GetMapping("/apartments")
+    @GetMapping("")
     public ResponseEntity<List<ApartmentDto>> getAllApartment() {
         try {
             List<ApartmentDto> apartments = apartmentService.findAllApartments();
