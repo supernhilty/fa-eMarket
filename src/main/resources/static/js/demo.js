@@ -1,4 +1,36 @@
 
+var contractTable = document.getElementById("fileTableContract");
+var customerTable = document.getElementById("fileTableCustomer");
+var apartmentTable = document.getElementById("fileTableApartment");
+
+var viewContractBtn = document.getElementById("viewContractBtn");
+var viewCustomerBtn = document.getElementById("viewCustomerBtn");
+var viewApartmentBtn = document.getElementById("viewApartmentBtn");
+
+contractTable.style.display = "none";
+customerTable.style.display = "none";
+apartmentTable.style.display = "none";
+
+viewContractBtn.addEventListener("click", function () {
+    contractTable.style.display = "block";
+    customerTable.style.display = "none";
+    apartmentTable.style.display = "none";
+    refreshTableContract();
+});
+
+viewCustomerBtn.addEventListener("click", function () {
+    contractTable.style.display = "none";
+    customerTable.style.display = "block";
+    apartmentTable.style.display = "none";
+    refreshTableCustomer();
+});
+
+viewApartmentBtn.addEventListener("click", function () {
+    contractTable.style.display = "none";
+    customerTable.style.display = "none";
+    apartmentTable.style.display = "block";
+    refreshTableApartment();
+});
 
 function refreshTableContract() {
     // Lấy đối tượng tbody của bảng
@@ -74,7 +106,6 @@ document.getElementById('formContract').addEventListener('submit', function (e) 
         console.log('Không có tệp nào được chọn.');
         alert("Không có tệp nào được chọn")
     }
-    refreshTableContract();
 });
 function refreshTableCustomer() {
     // Lấy đối tượng tbody của bảng
@@ -151,7 +182,6 @@ document.getElementById('formCustomer').addEventListener('submit', function (e) 
         console.log('Không có tệp nào được chọn.');
         alert("Không có tệp nào được chọn")
     }
-    refreshTableCustomer();
 });
 
 function refreshTableApartment() {
@@ -228,5 +258,4 @@ document.getElementById('formApartment').addEventListener('submit', function (e)
         console.log('Không có tệp nào được chọn.');
         alert("Không có tệp nào được chọn")
     }
-    refreshTableApartment();
 });
