@@ -17,6 +17,7 @@ public class ApartmentMapper extends CSVHelper {
     }
 
     public static Apartment toApartment(ApartmentDto apartmentDto){
+
         return Apartment.builder()
                 .id(apartmentDto.getId())
                 .address(apartmentDto.getAddress())

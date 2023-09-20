@@ -28,16 +28,21 @@ public class ContractServiceImpl implements ContractService {
     private ApartmentRepository apartmentRepository;
     @Override
     public boolean saveContract(ContractDto contractDto) throws ParseException {
-        Optional<Customer> cus = customerRepository.findById(contractDto.getCustomerId());
-        Optional<Apartment> apartment = apartmentRepository.findById(contractDto.getApartmentId());
-        Contract contract = ContractMapper.toContract(contractDto);
-        if(cus.isEmpty()||apartment.isEmpty()){
+        try {
+            Optional<Customer> cus = customerRepository.findById(contractDto.getCustomerId());
+            Optional<Apartment> apartment = apartmentRepository.findById(contractDto.getApartmentId());
+            Contract contract = ContractMapper.toContract(contractDto);
+            if(cus.isEmpty()||apartment.isEmpty()){
+                return false;
+            }else{
+                contract.setCustomer(cus.get());
+                contract.setApartment(apartment.get());
+                contractRepository.save(contract);
+            }
+        }catch(Exception e){
             return false;
-        }else{
-            contract.setCustomer(cus.get());
-            contract.setApartment(apartment.get());
-            contractRepository.save(contract);
         }
+
 
         return true;
     }

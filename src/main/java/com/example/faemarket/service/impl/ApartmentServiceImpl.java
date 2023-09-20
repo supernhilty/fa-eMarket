@@ -19,11 +19,16 @@ public class ApartmentServiceImpl implements ApartmentService {
     @Override
     public boolean saveApartment(ApartmentDto apartmentDto) {
         try {
-            apartmentRepository.save(ApartmentMapper.toApartment(apartmentDto));
-            return true;
+
+            if(apartmentRepository.existsById(apartmentDto.getId())){
+                Apartment apartment = apartmentRepository.save(ApartmentMapper.toApartment(apartmentDto));
+                return true;
+            }
+
         }catch (Exception e){
             return false;
         }
+        return false;
     }
 
     @Override
