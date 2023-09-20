@@ -167,51 +167,61 @@
 <!--table of content-->
 
     <div class="container mt-5">
-        <h3 class="table-text">Contract table</h3>
-        <table id="fileTableContract" class="table" style="color: red">
-            <thead>
-            <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Customer ID</th>
-                <th scope="col">Apartment ID</th>
-                <th scope="col">Start Day</th>
-                <th scope="col">End Day</th>
-            </tr>
-            </thead>
-            <tbody id="fileTableBodyContract">
+        <button type="button" class="btn btn-primary view-button" id="viewContractBtn">View Contract</button>
+        <div>
+            <table id="fileTableContract" class="table" style="color: red">
+                <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Customer ID</th>
+                    <th scope="col">Apartment ID</th>
+                    <th scope="col">Start Day</th>
+                    <th scope="col">End Day</th>
+                </tr>
+                </thead>
+                <tbody id="fileTableBodyContract">
 
-            </tbody>
-        </table>
-        <h3 class="table-text">Customer table</h3>
-        <table id="fileTableCustomer" class="table">
-            <thead>
-            <tr>
-                <th scope="col">ID</th>
-                <th scope="col">First Name</th>
-                <th scope="col">Last Name</th>
-                <th scope="col">Address</th>
-                <th scope="col">Age</th>
-                <th scope="col">Status</th>
-            </tr>
-            </thead>
-            <tbody id="fileTableBodyCustomer">
+                </tbody>
+            </table>
+        </div>
 
-            </tbody>
-        </table>
-        <h3 class="table-text">Apartment table</h3>
-        <table id="fileTableApartment" class="table" style="color: yellow">
-            <thead>
-            <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Address</th>
-                <th scope="col">Retail Price</th>
-                <th scope="col">Number of room</th>
-            </tr>
-            </thead>
-            <tbody id="fileTableBodyApartment">
+        <button type="button" class="btn btn-danger view-button" id="viewCustomerBtn">View Customer</button>
+        <div>
+            <table id="fileTableCustomer" class="table">
+                <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Status</th>
+                </tr>
+                </thead>
+                <tbody id="fileTableBodyCustomer">
 
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
+
+        <button type="button" class="btn btn-warning view-button" id="viewApartmentBtn">View Apartment</button>
+        <div>
+
+            <table id="fileTableApartment" class="table" style="color: yellow">
+                <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Retail Price</th>
+                    <th scope="col">Number of room</th>
+                </tr>
+                </thead>
+                <tbody id="fileTableBodyApartment">
+
+                </tbody>
+            </table>
+        </div>
+
     </div>
 
     <script th:src="@{/js/demo.js}">
