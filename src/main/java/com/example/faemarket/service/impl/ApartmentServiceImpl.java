@@ -20,15 +20,15 @@ public class ApartmentServiceImpl implements ApartmentService {
     public boolean saveApartment(ApartmentDto apartmentDto) {
         try {
 
-            if(apartmentRepository.existsById(apartmentDto.getId())){
-                Apartment apartment = apartmentRepository.save(ApartmentMapper.toApartment(apartmentDto));
-                return true;
-            }
 
-        }catch (Exception e){
+            apartmentRepository.save(ApartmentMapper.toApartment(apartmentDto));
+            return true;
+
+
+       }catch (Exception e){
             return false;
-        }
-        return false;
+       }
+
     }
 
     @Override
@@ -40,7 +40,7 @@ public class ApartmentServiceImpl implements ApartmentService {
     public int saveAllApartments(List<ApartmentDto> apartmentDtos) {
         int fail=0;
         for (ApartmentDto o:apartmentDtos) {
-            if(apartmentRepository.existsById(o.getId())){
+            if(apartmentRepository.existsById(o.getId())||o.getId().isBlank()){
                 fail++;
             }else{
                 try{

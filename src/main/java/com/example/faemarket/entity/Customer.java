@@ -1,13 +1,11 @@
 package com.example.faemarket.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.antlr.v4.runtime.misc.NotNull;
 
 import java.util.List;
 
@@ -20,10 +18,15 @@ import java.util.List;
 public class Customer {
     @Id
     private String id;
+    @Column(nullable = false)
     private String firstName;
+    @Column(nullable = false)
     private String lastName;
+    @Column(nullable = false)
     private String address;
+    @Column(nullable = false)
     private int age;
+    @Column(nullable = false)
     private String status;
 
     @OneToMany(mappedBy = "customer")

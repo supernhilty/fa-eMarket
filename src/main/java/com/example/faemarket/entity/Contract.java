@@ -17,8 +17,9 @@ import java.util.Date;
 public class Contract {
     @Id
     private String id;
-
+    @Column(nullable = false)
     private Date startDate;
+    @Column(nullable = false)
     private Date endDate;
 
     @ManyToOne()

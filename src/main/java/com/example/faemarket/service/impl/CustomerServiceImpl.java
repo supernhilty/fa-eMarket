@@ -31,7 +31,7 @@ public class CustomerServiceImpl implements CustomerService {
     public int saveAllCustomers(List<CustomerDto> customerDtos) {
         int fail=0;
         for (CustomerDto o:customerDtos) {
-            if(customerRepository.existsById(o.getId())){
+            if(customerRepository.existsById(o.getId())||o.getId().isBlank()){
                 fail++;
             }else{
 

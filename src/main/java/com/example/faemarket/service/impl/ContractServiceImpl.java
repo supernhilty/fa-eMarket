@@ -56,7 +56,7 @@ public class ContractServiceImpl implements ContractService {
     public int saveAllContracts(List<ContractDto> contractDtos)  {
         int fail=0;
         for (ContractDto o:contractDtos) {
-            if(contractRepository.existsById(o.getId())){
+            if(contractRepository.existsById(o.getId())||o.getId().isBlank()){
                 fail++;
             }else{
                 try{

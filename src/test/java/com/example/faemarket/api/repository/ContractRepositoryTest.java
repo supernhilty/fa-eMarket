@@ -3,7 +3,9 @@ package com.example.faemarket.api.repository;
 import com.example.faemarket.entity.Apartment;
 import com.example.faemarket.entity.Contract;
 import com.example.faemarket.entity.Customer;
+import com.example.faemarket.repository.ApartmentRepository;
 import com.example.faemarket.repository.ContractRepository;
+import com.example.faemarket.repository.CustomerRepository;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,25 +23,34 @@ import java.util.List;
 public class ContractRepositoryTest {
     @Autowired
     private ContractRepository contractRepository;
+    @Autowired
+    private ApartmentRepository apartmentRepository;
+    @Autowired
+    private CustomerRepository customerRepository;
     @Test
     public void ContractRepository_Save_ReturnContract(){
         //Arrange
         Contract contract = null;
+        Customer customer = Customer.builder()
+                .id("C001")
+                .firstName("Nhi")
+                .lastName("Le Thi Yen")
+                .age(20)
+                .address("Quang Tri")
+                .status("active").build();
+        Apartment apartment = Apartment.builder()
+                .id("A001")
+                .address("Ho Chi Minh")
+                .retailPrice("3000")
+                .numberOfRoom(3).build();
+        customerRepository.save(customer);
+        apartmentRepository.save(apartment);
+
         try {
             contract = Contract.builder()
                     .id("A001")
-                    .customer(Customer.builder()
-                            .id("C001")
-                            .firstName("Nhi")
-                            .lastName("Le Thi Yen")
-                            .age(20)
-                            .address("Quang Tri")
-                            .status("active").build())
-                    .apartment(Apartment.builder()
-                            .id("A001")
-                            .address("Ho Chi Minh")
-                            .retailPrice("3000")
-                            .numberOfRoom(3).build())
+                    .customer(customer)
+                    .apartment(apartment)
                     .startDate(new SimpleDateFormat("dd/MM/yyyy").parse("20/9/2023"))
                     .endDate(new SimpleDateFormat("dd/MM/yyyy").parse("20/9/2023")).build();
         } catch (ParseException e) {
@@ -56,21 +67,26 @@ public class ContractRepositoryTest {
     @Test
     public void ContractRepository_GetAll_ReturnAll() {
         Contract contract = null;
+        Customer customer = Customer.builder()
+                .id("C001")
+                .firstName("Nhi")
+                .lastName("Le Thi Yen")
+                .age(20)
+                .address("Quang Tri")
+                .status("active").build();
+        Apartment apartment = Apartment.builder()
+                .id("A001")
+                .address("Ho Chi Minh")
+                .retailPrice("3000")
+                .numberOfRoom(3).build();
+        customerRepository.save(customer);
+        apartmentRepository.save(apartment);
+
         try {
             contract = Contract.builder()
                     .id("A001")
-                    .customer(Customer.builder()
-                            .id("C001")
-                            .firstName("Nhi")
-                            .lastName("Le Thi Yen")
-                            .age(20)
-                            .address("Quang Tri")
-                            .status("active").build())
-                    .apartment(Apartment.builder()
-                            .id("A001")
-                            .address("Ho Chi Minh")
-                            .retailPrice("3000")
-                            .numberOfRoom(3).build())
+                    .customer(customer)
+                    .apartment(apartment)
                     .startDate(new SimpleDateFormat("dd/MM/yyyy").parse("20/9/2023"))
                     .endDate(new SimpleDateFormat("dd/MM/yyyy").parse("20/9/2023")).build();
         } catch (ParseException e) {
@@ -80,18 +96,8 @@ public class ContractRepositoryTest {
         try {
             contract2 = Contract.builder()
                     .id("A002")
-                    .customer(Customer.builder()
-                            .id("C001")
-                            .firstName("Nhi")
-                            .lastName("Le Thi Yen")
-                            .age(20)
-                            .address("Quang Tri")
-                            .status("active").build())
-                    .apartment(Apartment.builder()
-                            .id("A001")
-                            .address("Ho Chi Minh")
-                            .retailPrice("3000")
-                            .numberOfRoom(3).build())
+                    .customer(customer)
+                    .apartment(apartment)
                     .startDate(new SimpleDateFormat("dd/MM/yyyy").parse("20/9/2023"))
                     .endDate(new SimpleDateFormat("dd/MM/yyyy").parse("20/9/2023")).build();
         } catch (ParseException e) {
@@ -109,21 +115,26 @@ public class ContractRepositoryTest {
     public void ContractRepository_FindById_ReturnContract(){
         //Arrange
         Contract contract = null;
+        Customer customer = Customer.builder()
+                .id("C001")
+                .firstName("Nhi")
+                .lastName("Le Thi Yen")
+                .age(20)
+                .address("Quang Tri")
+                .status("active").build();
+        Apartment apartment = Apartment.builder()
+                .id("A001")
+                .address("Ho Chi Minh")
+                .retailPrice("3000")
+                .numberOfRoom(3).build();
+        customerRepository.save(customer);
+        apartmentRepository.save(apartment);
+
         try {
             contract = Contract.builder()
                     .id("A001")
-                    .customer(Customer.builder()
-                            .id("C001")
-                            .firstName("Nhi")
-                            .lastName("Le Thi Yen")
-                            .age(20)
-                            .address("Quang Tri")
-                            .status("active").build())
-                    .apartment(Apartment.builder()
-                            .id("A001")
-                            .address("Ho Chi Minh")
-                            .retailPrice("3000")
-                            .numberOfRoom(3).build())
+                    .customer(customer)
+                    .apartment(apartment)
                     .startDate(new SimpleDateFormat("dd/MM/yyyy").parse("20/9/2023"))
                     .endDate(new SimpleDateFormat("dd/MM/yyyy").parse("20/9/2023")).build();
         } catch (ParseException e) {

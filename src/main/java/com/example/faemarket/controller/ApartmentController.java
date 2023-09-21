@@ -21,6 +21,9 @@ public class ApartmentController {
     @Autowired
     private ApartmentMapper apartmentMapper;
 
+    public ApartmentController(ApartmentService apartmentServiceMock, ApartmentMapper apartmentMapperMock) {
+    }
+
     @PostMapping("/upload")
     public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file) {
         String message = "";
