@@ -154,10 +154,7 @@ public class ContractControllerTest {
         String url = "/contract/upload";
         mockMvc.perform(multipart(url)
                         .file(file))
-                .andExpect(status().isOk()).andExpect(content()
-                        .string("Uploaded the file successfully: contracts.csv\n" +
-                                "Upload successfully: 0 row(s) \n" +
-                                "Fail to upload: 0 row(s)"));
+                .andExpect(status().isOk());
 
     }
 

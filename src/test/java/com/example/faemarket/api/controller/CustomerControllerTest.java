@@ -133,7 +133,7 @@ public class CustomerControllerTest {
 
 
 
-        String url = "/apartment/upload";
+        String url = "/customer/upload";
 
 
         mockMvc.perform(multipart(url)
@@ -144,23 +144,21 @@ public class CustomerControllerTest {
 
     @Test
     public void CustomerController_UploadMissingValueFile() throws Exception {
-        List<ApartmentDto> list = new ArrayList<>();
-        ApartmentDto apartmentDto = new ApartmentDto();
-        list.add(apartmentDto);
+        List list = new ArrayList<>();
+        CustomerDto customerDto = new CustomerDto();
+        list.add(customerDto);
         MockMultipartFile file = new MockMultipartFile("file", "customer.csv",
                 "text/csv",
                 "id,address,retailPrice,numberOfRoom\n".getBytes());
 
-        Mockito.when(customerService.
-                saveAllCustomers(any())).thenReturn(0);
-        String url = "/apartment/upload";
+        Mockito.when(customerService.saveAllCustomers(list)).thenReturn(0);
+        String url = "/customer/upload";
         mockMvc.perform(multipart(url)
                         .file(file))
                 .andExpect(status().isOk()).andExpect(content()
                         .string("Uploaded the file successfully: customer.csv\n" +
                                 "Upload successfully: 0 row(s) \n" +
                                 "Fail to upload: 0 row(s)"));
-
     }
 
 
