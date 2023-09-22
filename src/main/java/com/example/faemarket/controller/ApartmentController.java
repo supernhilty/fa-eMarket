@@ -31,9 +31,10 @@ public class ApartmentController {
         int succeed = 0;
         if (CSVHelper.hasCSVFormat(file)) {
             try {
-                List<ApartmentDto> list = (List<ApartmentDto>) apartmentMapper.csvToObject(file.getInputStream());
+                List<?> list =  apartmentMapper.csvToObject(file.getInputStream());
+                List<ApartmentDto> list1 = (List<ApartmentDto>) list;
 
-                fail = apartmentService.saveAllApartments(list);
+                fail = apartmentService.saveAllApartments(list1);
                 succeed = list.size()-fail;
                 message = "Uploaded the file successfully: " + file.getOriginalFilename()
                         + "\nUpload successfully: "+succeed+" row(s) \nFail to upload: " + fail+ " row(s)";

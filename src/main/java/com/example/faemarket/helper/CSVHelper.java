@@ -24,7 +24,7 @@ public class CSVHelper {
         return true;
     }
 
-    public List<? extends Object> csvToObject(InputStream is) {
+    public List<?>  csvToObject(InputStream is) {
         try (BufferedReader fileReader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
              CSVParser csvParser = new CSVParser(fileReader,
                      CSVFormat.DEFAULT.withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim());) {
