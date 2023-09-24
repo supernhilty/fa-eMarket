@@ -7,30 +7,13 @@ var viewContractBtn = document.getElementById("viewContractBtn");
 var viewCustomerBtn = document.getElementById("viewCustomerBtn");
 var viewApartmentBtn = document.getElementById("viewApartmentBtn");
 
-contractTable.style.display = "none";
-customerTable.style.display = "none";
-apartmentTable.style.display = "none";
+var displayInfoBtn = document.getElementById("displayInfo");
 
-viewContractBtn.addEventListener("click", function () {
-    contractTable.style.display = "block";
-    customerTable.style.display = "none";
-    apartmentTable.style.display = "none";
-    refreshTableContract();
-});
-
-viewCustomerBtn.addEventListener("click", function () {
-    contractTable.style.display = "none";
-    customerTable.style.display = "block";
-    apartmentTable.style.display = "none";
+displayInfoBtn.addEventListener("click",function () {
     refreshTableCustomer();
-});
-
-viewApartmentBtn.addEventListener("click", function () {
-    contractTable.style.display = "none";
-    customerTable.style.display = "none";
-    apartmentTable.style.display = "block";
+    refreshTableContract();
     refreshTableApartment();
-});
+})
 
 function refreshTableContract() {
     // Lấy đối tượng tbody của bảng
@@ -102,6 +85,7 @@ document.getElementById('formContract').addEventListener('submit', function (e) 
                 alert('Lỗi khi tải tệp'); // Thông báo lỗi tải tệp
                 // Xử lý lỗi ở đây nếu cần
             });
+        refreshTableContract()
     } else {
         console.log('Không có tệp nào được chọn.');
         alert("Không có tệp nào được chọn")
@@ -109,7 +93,7 @@ document.getElementById('formContract').addEventListener('submit', function (e) 
 });
 function refreshTableCustomer() {
     // Lấy đối tượng tbody của bảng
-    const tbody = document.getElementById('fileTableCustomer');
+    const tbody = document.getElementById('fileTableBodyCustomer');
 
     // Gửi yêu cầu GET đến máy chủ để lấy dữ liệu mới
     fetch('http://localhost:8080/customer')
@@ -142,6 +126,7 @@ function refreshTableCustomer() {
             console.error('Lỗi khi tải lại bảng:', error);
         });
 }
+
 document.getElementById('formCustomer').addEventListener('submit', function (e) {
     e.preventDefault(); // Ngăn chuyển hướng mặc định của biểu mẫu
 
@@ -178,6 +163,7 @@ document.getElementById('formCustomer').addEventListener('submit', function (e) 
                 alert('Lỗi khi tải tệp'); // Thông báo lỗi tải tệp
                 // Xử lý lỗi ở đây nếu cần
             });
+        refreshTableCustomer()
     } else {
         console.log('Không có tệp nào được chọn.');
         alert("Không có tệp nào được chọn")
@@ -254,6 +240,7 @@ document.getElementById('formApartment').addEventListener('submit', function (e)
                 alert('Lỗi khi tải tệp'); // Thông báo lỗi tải tệp
                 // Xử lý lỗi ở đây nếu cần
             });
+        refreshTableApartment()
     } else {
         console.log('Không có tệp nào được chọn.');
         alert("Không có tệp nào được chọn")
